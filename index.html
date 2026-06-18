@@ -17,7 +17,6 @@
   <div class="wrap sitenav-inner">
     <span class="mono brand">PS</span>
     <div class="nav-links">
-      <a href="#demo" data-section="demo">Demo</a>
       <a href="#about" data-section="about">About</a>
       <a href="#approach" data-section="approach">Approach</a>
       <a href="#skills" data-section="skills">Skills</a>
@@ -26,6 +25,7 @@
       <a href="#education" data-section="education">Education</a>
       <a href="#credentials" data-section="credentials">Credentials</a>
       <a href="#languages" data-section="languages">Languages</a>
+      <a href="#interests" data-section="interests">Interests</a>
     </div>
   </div>
 </nav>
@@ -47,7 +47,7 @@
       <span class="clock mono"><span class="live-dot"></span><span id="clockTime">--:--</span> local time</span>
     </div>
   </div>
-  <a href="#demo" class="scroll-cue mono" aria-label="Scroll to next section">SCROLL</a>
+  <a href="#about" class="scroll-cue mono" aria-label="Scroll to next section">SCROLL</a>
 </header>
 
 <div class="stat-strip reveal">
@@ -63,29 +63,9 @@
 
 <main class="wrap">
 
-  <section id="demo" class="reveal">
-    <div class="section-head">
-      <span class="tag mono">01 / SEE IT RUN</span>
-      <h2 class="section-title">A workflow, live</h2>
-    </div>
-    <div class="terminal">
-      <div class="term-bar">
-        <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
-        <span class="term-title mono">automation.log</span>
-      </div>
-      <div class="term-body mono" id="termBody">
-        <div class="term-line idle">Click "Run workflow" to watch a typical bot execution.</div>
-      </div>
-      <div class="term-footer">
-        <button class="run-btn" id="runBtn" type="button">▶ Run workflow</button>
-        <span class="run-hint">A simplified, generic stand-in for the kind of UiPath bot I build day to day.</span>
-      </div>
-    </div>
-  </section>
-
   <section id="about" class="reveal">
     <div class="section-head">
-      <span class="tag mono">02 / ABOUT</span>
+      <span class="tag mono">01 / ABOUT</span>
       <h2 class="section-title">What I build</h2>
     </div>
     <div class="about-grid">
@@ -113,7 +93,7 @@
 
   <section id="approach" class="reveal">
     <div class="section-head">
-      <span class="tag mono">03 / APPROACH</span>
+      <span class="tag mono">02 / APPROACH</span>
       <h2 class="section-title">How I work</h2>
     </div>
     <p class="approach-intro">Every automation I ship follows roughly the same disciplined loop — adapted from UiPath's REFramework, but really it's just how I think about any process before touching code.</p>
@@ -148,11 +128,12 @@
 
   <section id="skills" class="reveal">
     <div class="section-head">
-      <span class="tag mono">04 / SKILLS</span>
+      <span class="tag mono">03 / SKILLS</span>
       <h2 class="section-title">Toolkit</h2>
     </div>
     <p class="filter-hint">Click a skill to see where it shows up in the timeline below.<button class="clear-btn" id="clearFilter" type="button" hidden>Clear</button></p>
     <div class="pill-group" id="skillPills">
+      <button class="pill lead" type="button" data-skill="uipath" aria-pressed="false">UiPath &amp; RPA</button>
       <button class="pill lead" type="button" data-skill="sap" aria-pressed="false">SAP Business One</button>
       <button class="pill lead" type="button" data-skill="programming" aria-pressed="false">Programming</button>
       <button class="pill lead" type="button" data-skill="data" aria-pressed="false">Data Analysis</button>
@@ -169,7 +150,7 @@
 
   <section id="work" class="reveal">
     <div class="section-head">
-      <span class="tag mono">05 / REPRESENTATIVE WORK</span>
+      <span class="tag mono">04 / REPRESENTATIVE WORK</span>
       <h2 class="section-title">What this looks like in practice</h2>
     </div>
     <p class="work-intro">A few patterns drawn from the kind of automation I build day to day — described generally rather than by client, since the underlying systems are confidential.</p>
@@ -212,7 +193,7 @@
 
   <section id="experience" class="reveal">
     <div class="section-head">
-      <span class="tag mono">06 / EXPERIENCE</span>
+      <span class="tag mono">05 / EXPERIENCE</span>
       <h2 class="section-title">Pipeline so far</h2>
     </div>
 
@@ -295,7 +276,7 @@
 
   <section id="education" class="reveal">
     <div class="section-head">
-      <span class="tag mono">07 / EDUCATION</span>
+      <span class="tag mono">06 / EDUCATION</span>
       <h2 class="section-title">Foundation</h2>
     </div>
     <div class="card-grid">
@@ -314,41 +295,73 @@
 
   <section id="credentials" class="reveal">
     <div class="section-head">
-      <span class="tag mono">08 / CREDENTIALS</span>
+      <span class="tag mono">07 / CREDENTIALS</span>
       <h2 class="section-title">Certifications &amp; recognition</h2>
     </div>
-    <div class="card-grid">
+
+    <span class="side-label mono">CERTIFICATIONS</span>
+    <div class="card-grid" style="margin-bottom: 40px;">
       <div class="card">
-        <h3>Certifications</h3>
         <ul class="list-plain">
           <li>Java Basic Certified</li>
           <li>Effective Networking</li>
           <li>AWS Lambda and the Serverless Framework</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="list-plain">
           <li>SQL Intermediate Certified</li>
           <li>Mastering SQL Server Reporting Services (SSRS) From Scratch</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>Honors &amp; Awards</h3>
-        <ul class="list-plain">
-          <li>Conceptual Modelling</li>
-          <li>Being Responsive — 2022</li>
-          <li>Victory League 2022</li>
-          <li>Extraordinarie</li>
-          <li>Being Responsive — 2023</li>
-        </ul>
+    </div>
+
+    <span class="side-label mono">HONORS &amp; AWARDS</span>
+    <div class="award-grid">
+      <div class="award-card">
+        <span class="award-icon">🏆</span>
+        <h3>Conceptual Modelling</h3>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">🏆</span>
+        <h3>Being Responsive</h3>
+        <span class="award-year mono">2022</span>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">🏆</span>
+        <h3>Victory League</h3>
+        <span class="award-year mono">2022</span>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">🏆</span>
+        <h3>Extraordinarie</h3>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">🏆</span>
+        <h3>Being Responsive</h3>
+        <span class="award-year mono">2023</span>
       </div>
     </div>
   </section>
 
   <section id="languages" class="reveal">
     <div class="section-head">
-      <span class="tag mono">09 / LANGUAGES</span>
+      <span class="tag mono">08 / LANGUAGES</span>
       <h2 class="section-title">Languages</h2>
     </div>
     <div class="pill-group">
       <span class="pill lead">Tamil — Native or Bilingual</span>
       <span class="pill lead">English — Professional Working</span>
+    </div>
+  </section>
+
+  <section id="interests" class="reveal">
+    <div class="section-head">
+      <span class="tag mono">09 / BEYOND WORK</span>
+      <h2 class="section-title">Interests</h2>
+    </div>
+    <div class="pill-group">
+      <span class="pill">Add your interests here</span>
     </div>
   </section>
 
