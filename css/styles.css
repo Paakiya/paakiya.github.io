@@ -155,6 +155,36 @@ h1.name{
   color:var(--text-muted);
 }
 
+.tagline .caret{
+  display:inline-block;
+  margin-left:2px;
+  color:var(--accent);
+}
+@media (prefers-reduced-motion: no-preference){
+  .tagline .caret{ animation: blink 1s steps(1) infinite; }
+}
+@keyframes blink{ 50%{ opacity:0; } }
+
+.status-badge{ display:inline-flex; align-items:center; gap:7px; font-size:0.78rem; color:var(--text-muted); margin-top:16px; }
+
+@media (prefers-reduced-motion: no-preference){
+  .hero-grid{ animation: grid-drift 16s linear infinite; }
+}
+@keyframes grid-drift{ from{ background-position: 0 0, 0 0; } to{ background-position: 42px 42px, 42px 42px; } }
+
+.sitenav .brand{ position:relative; }
+@media (prefers-reduced-motion: no-preference){
+  .sitenav .brand:hover{ animation: glitch 0.3s steps(2) 2; }
+}
+@keyframes glitch{
+  0%{ transform:translate(0); }
+  20%{ transform:translate(-2px,1px); text-shadow:2px 0 var(--accent), -2px 0 var(--accent-soft); }
+  40%{ transform:translate(2px,-1px); text-shadow:none; }
+  60%{ transform:translate(-1px,1px); text-shadow:-2px 0 var(--accent), 2px 0 var(--accent-soft); }
+  80%{ transform:translate(1px,-1px); text-shadow:none; }
+  100%{ transform:translate(0); text-shadow:none; }
+}
+
 /* ---------- SCROLL CUE ---------- */
 .scroll-cue{
   position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
@@ -504,6 +534,7 @@ footer .mono{ color:var(--text-muted); font-size:0.8rem; }
   .pipeline-fill, .pipeline-head{ transition:none; }
   .reveal{ opacity:1; transform:none; transition:none; }
   .cursor-glow{ display:none; }
+  .hero-grid{ animation:none; }
 }
 
 @media (max-width: 900px){
