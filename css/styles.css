@@ -556,8 +556,7 @@ button.pill.active{
   gap:18px;
 }
 
-.vol-grid{ grid-template-columns: repeat(3, 1fr); }
-@media (max-width: 900px){ .vol-grid{ grid-template-columns: repeat(2, 1fr); } }
+.vol-grid{ grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 600px){ .vol-grid{ grid-template-columns: 1fr; } }
 
 .card{
